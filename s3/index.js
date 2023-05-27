@@ -19,7 +19,7 @@ const createBucket = () => {
 /*                            Upload file to AWS S3                           */
 /* -------------------------------------------------------------------------- */
 const uploadFileToS3 = () => {
-  const exampleFilePath = path.resolve(process.cwd(), "sample-file.txt")
+  const exampleFilePath = path.resolve(process.cwd(), "s3/sample-file.txt")
   const fileStream = fs.createReadStream(exampleFilePath)
   const uploadParams = {
     Bucket: "ias",
