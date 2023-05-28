@@ -1,8 +1,8 @@
-const AWS = require("@aws-sdk/client-s3")
+const { S3 } = require("@aws-sdk/client-s3")
 const fs = require("fs")
 const path = require("path")
 
-const s3Client = new AWS.S3({
+const s3Client = new S3({
   region: "us-east-1",
   endpoint: "http://localhost:4566",
   forcePathStyle: true,
