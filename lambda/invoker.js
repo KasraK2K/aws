@@ -25,7 +25,7 @@ const invokeLambdaFunction = async () => {
     const response = await lambdaClient.send(command)
     if (response.Payload) {
       const result = JSON.parse(decoder.decode(response.Payload))
-      console.log(result)
+      console.log(result.body)
     } else {
       console.log("Response payload is empty")
     }
