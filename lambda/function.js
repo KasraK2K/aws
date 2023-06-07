@@ -1,5 +1,8 @@
 exports.handler = async (event) => {
-  const { num1, num2 } = event
+  let body
+  if (event && event.body) body = JSON.parse(event.body)
+  else body = event
+  const { num1, num2 } = body
   const product = num1 * num2
   return {
     statusCode: 200,
