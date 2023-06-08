@@ -1,4 +1,4 @@
-exports.handler = async (event) => {
+module.exports.handler = async (event) => {
   let body
   if (event && event.body) body = JSON.parse(event.body)
   else body = event
