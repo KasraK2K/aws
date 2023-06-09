@@ -10,6 +10,8 @@ fi
 
 echo "Create $ZIP_FILE_NAME file."
 zip ${ZIP_FILE_NAME} ${FILE_NAME}
+
+echo "Create lambda function."
 awslocal lambda create-function \
     --function-name ${FUNCTION_NAME} \
     --runtime nodejs18.x \
