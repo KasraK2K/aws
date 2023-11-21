@@ -26,7 +26,7 @@ async function listQueues() {
 async function deleteQueue() {
   sqs
     .deleteQueue({ QueueUrl })
-    .then(() => console.log(`Queue delete successfuly`))
+    .then(() => console.log(`Queue delete successfully`))
     .catch((err) => console.log(err.message))
 }
 // deleteQueue()
@@ -64,6 +64,6 @@ async function receiveMessage() {
 async function deleteMessage(ReceiptHandle) {
   sqs
     .deleteMessage({ QueueUrl, ReceiptHandle })
-    .then(() => console.log(`Message delete successfuly.`))
+    .then(() => console.log(`Message delete successfully.`))
     .catch((err) => console.log(err.message))
 }

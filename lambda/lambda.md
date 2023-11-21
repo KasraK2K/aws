@@ -17,7 +17,7 @@ Lambda functions are highly versatile and can be used in various scenarios, incl
 
   5. **Scheduled Tasks**: Lambda functions can be scheduled to run at specific intervals or times, performing tasks such as data backups, generating reports, or sending notifications.
 
-  6. **Chatbots and Voice Assistants**: Lambda functions can be integrated with messaging platforms or voice assistant services to build chatbots or voice-enabled applications.
+  6. **Chatbot and Voice Assistants**: Lambda functions can be integrated with messaging platforms or voice assistant services to build chatbot or voice-enabled applications.
 
   7. **Data Stream Processing**: Lambda functions can be part of a streaming pipeline, processing real-time data from sources like AWS Kinesis or Apache Kafka.
 
@@ -51,7 +51,7 @@ FILE_NAME="function.js" # Our function file name
 ZIP_FILE_NAME="function.zip" # Name for zipped function
 FUNCTION_NAME="my-lambda-function" # Lambda function name
 
-echo "Cheking $ZIP_FILE_NAME existance..."
+echo "Checking $ZIP_FILE_NAME existence..."
 
 # Remove the last zipped file to create a new one
 if [ -f "$ZIP_FILE_NAME" ]; then
