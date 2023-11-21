@@ -34,7 +34,7 @@ async function deleteQueue() {
 async function purgeQueue() {
   sqs
     .purgeQueue({ QueueUrl })
-    .then(() => console.log(`Queue purge successfuly`))
+    .then(() => console.log(`Queue purge successfully`))
     .catch((err) => console.log(err.message))
 }
 // purgeQueue()
